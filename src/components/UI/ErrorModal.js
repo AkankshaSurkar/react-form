@@ -40,6 +40,7 @@ const ErrorModal=(props)=>{
             {ReactDOM.createPortal(<ModalOverlay 
             title={props.title}
             message={props.onConfirm}
+            onConfirm={props.onConfirm}
             />,
             document.getElementById('overlay-root')
             )}

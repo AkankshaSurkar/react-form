@@ -18,7 +18,7 @@ const AddUser = (props) =>{
         const enteredUserAge = ageInputRef.current.value;
         const enteredCollegename =collegenameInputRef.current.value;
 
-        if(enteredName.trim().length === 0 || enteredUserAge.trim().length ===0 || enteredCollegename.trim.length === 0)
+        if(enteredName.trim().length === 0 || enteredUserAge.trim().length ===0 || enteredCollegename.trim().length === 0)
         {
         setError({
             title: 'Invalid input',
@@ -47,8 +47,8 @@ const AddUser = (props) =>{
         <Wrapper>
             {error && (
             <ErrorModal
-             title = {error?.title} 
-             message={error?.message}
+             title = {error.title} 
+             message={error.message}
              onConfirm={errorHandler}
              />
              )}
